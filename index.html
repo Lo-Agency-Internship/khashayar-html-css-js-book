@@ -4,81 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Technical Documentation Page</title>
   </head>
   <body>
-    <main class="page-wrapper">
-      <h1 id="page-title">Documentation</h1>
-      <div class="sidebar">
-        <h2 id="sideabr__title">Statemetns</h2>
-        <ol class="sidebar__stats-list">
-          <li class="sidebar__stats-list-item">What is HTML?</li>
-          <li class="sidebar__stats-list-item">
-            What is a basic structure of an HTML document?
-          </li>
-          <li class="sidebar__stats-list-item">
-            <p>What are the tags/elements that you've learned so far?</p>
-            <ol id="sidebar__list-item__list">
-              <li class="sidebar__list-item-item">How are they written?</li>
-              <li class="sidebar__list-item-item">
+    <div class="page-wrapper">
+      <header><h1 id="title">Documentation</h1></header>
+      <main>
+        <div id="sidebar">
+          <h2 id="sidebar__title">Statemetns</h2>
+          <ul class="sidebar__stats-list">
+            <li class="sidebar__stats-list-item">
+              <button onclick="htmlClick()">What is HTML?</button>
+            </li>
+            <li class="sidebar__stats-list-item">
+              <button onclick="structClick()">
+                What is a basic structure of an HTML document?
+              </button>
+            </li>
+            <li class="sidebar__stats-list-item">
+              <button onclick="tagClick()">
+                What are the tags/elements that you've learned so far?
+              </button>
+            </li>
+            <li class="sidebar__stats-list-item">
+              <button onclick="writtenClick()">How are they written?</button>
+            </li>
+            <li class="sidebar__stats-list-item">
+              <button onclick="importantClick()">
                 What are their important attributes?
-              </li>
-              <li class="sidebar__list-item-item">How can they be used</li>
-            </ol>
-          </li>
-        </ol>
-      </div>
-      <div class="main">
-        <h2 id="main-title">Defenitions</h2>
-        <div class="main-def-group">
-          <span id="HTML" class="main-def-group__question">
-            1. What is HTML?</span
-          >
-          <p class="main-def-group__answer">
-            HTML stands for HyperText Markup Language that is used to create and
-            preview documents in web browser.
-          </p>
+              </button>
+            </li>
+            <li class="sidebar__stats-list-item">
+              <button onclick="usageClick()">How can they be used</button>
+            </li>
+          </ul>
         </div>
-        <div class="main-def-group">
-          <span id="structure" class="main-def-group__question">
-            2. What is a basic structure of an HTML document?</span
-          >
-          <p class="main-def-group__answer">
-            HTML consists of a series of elements(tags) which each of them has
-            it own way of showing and using the content. It starts with
-            "!DOCTYPE html" tag which indicates the version of HTML. The "html"
-            tag which is the root of the webpage. The "head" tag which indicates
-            the meta info of the webpage which users can not see it. The "body"
-            tag where is the main content is wirtten.
-          </p>
+        <div id="content">
+          <div id="header">
+            <h2 id="content-title">Defenitions</h2>
+            <p id="guide">Click on the buttons to show content!</p>
+          </div>
+          <div id="html" class="content-def-group">
+            <span class="content-def-group__question"> 1. What is HTML?</span>
+            <p class="content-def-group__answer">
+              HTML stands for HyperText Markup Language that is used to create
+              and preview documents in web browser.
+            </p>
+          </div>
+          <div id="structure" class="content-def-group">
+            <span class="content-def-group__question">
+              2. What is a basic structure of an HTML document?</span
+            >
+            <p class="content-def-group__answer">
+              HTML consists of a series of elements(tags) which each of them has
+              it own way of showing and using the content. It starts with
+              "!DOCTYPE html" tag which indicates the version of HTML. The
+              "html" tag which is the root of the webpage. The "head" tag which
+              indicates the meta info of the webpage which users can not see it.
+              The "body" tag where is the main content is wirtten.
+            </p>
+          </div>
+          <div id="tags" class="content-def-group">
+            <span class="content-def-group__question">
+              3. What are the tags/elements that you've learned so far?</span
+            >
+            <p class="content-def-group__answer">
+              I've learned some tag including: p - h1 - h2 - h3 - nav - img -
+              div - a and ... .
+            </p>
+          </div>
+          <div id="written" class="content-def-group">
+            <span class="tags__question">1. How are they written?</span>
+            <p class="tags__answer">
+              They can be used by using angle brackets by their surroundings.
+            </p>
+          </div>
+          <div id="important" class="content-def-group">
+            <span class="tags__question">
+              2. What are their important attributes?</span
+            >
+            <p class="tags__answer">
+              class and id are two of their important attributes. src is the
+              most important attribute for img, a and ...
+            </p>
+          </div>
+          <div id="usage" class="content-def-group">
+            <span class="tags__question">3. How can they be used</span>
+            <p class="tags__answer">
+              Related to their usage, there several type of usage. Links must be
+              written in the src of an a link. Whereas the other have another
+              ways.
+            </p>
+          </div>
         </div>
-        <div class="main-def-group">
-          <span id="tags" class="main-def-group__question">
-            3. What are the tags/elements that you've learned so far?</span
-          >
-          <p class="main-def-group__answer">
-            I've learned some tag including: p - h1 - h2 - h3 - nav - img - div
-            - a and ... .
-          </p>
-          <span class="tags__question">1. How are they written?</span>
-          <p id="written" class="tags__answer">
-            They can be used by using angle brackets by their surroundings.
-          </p>
-          <span class="tags__question">
-            2. What are their important attributes?</span
-          >
-          <p id="important" class="tags__answer">
-            class and id are two of their important attributes. src is the most
-            important attribute for img, a and ...
-          </p>
-          <span class="tags__question">3. How can they be used</span>
-          <p id="usage" class="tags__answer">
-            Related to their usage, there several type of usage. Links must be
-            written in the src of an a link. Whereas the other have another
-            ways.
-          </p>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
