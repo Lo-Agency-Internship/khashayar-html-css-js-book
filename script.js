@@ -1,4 +1,5 @@
 function htmlClick() {
+  clear();
   document.getElementById("guide").innerHTML = " ";
   const p = document.getElementById("html");
   p.classList.add("visible");
