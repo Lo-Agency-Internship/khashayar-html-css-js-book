@@ -17,17 +17,22 @@ body {
   overflow-x: hidden;
   height: 100vh;
   font-size: 1.5rem;
+  background-color: rgb(247, 222, 170);
 }
 
 /* body */
 
 .page-wrapper {
   padding: 5rem;
+  
 }
 
 /* title */
 header {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 2rem;
+  
+
 }
 #title {
   text-align: center;
@@ -51,8 +56,10 @@ ul {
 
 #sidebar {
   width: 25%;
-  border-right: 1px solid black;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: rgb(133, 203, 238);
+  border-radius: 20px;
+  margin: 2rem;
 }
 #sidebar__title {
   text-align: center;
@@ -64,12 +71,29 @@ ul {
   font-size: 2rem;
 }
 
+
+
 /* content */
+
 
 #content {
   padding: 1rem;
+  position: relative;
   width: 100%;
+  background-color: rgb(133, 203, 238);
+  border-radius: 20px;
+  margin: 2rem;
 }
+#content::before{
+  content: '';
+  position: absolute;
+  left: -20px;
+  border-right: 1px solid rgb(0, 0, 0);
+  height: 100%;
+  top: 2px;
+}
+
+
 
 #content-title {
   text-align: center;
